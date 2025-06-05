@@ -15,9 +15,9 @@
         "dangerColor": "#848383",
         "mainFont": "Inter Tight",
         "display1Font": "Lora",
-        "display1Size": 5,
+        "display1Size": "5.5",
         "display2Font": "Lora",
-        "display2Size": 4,
+        "display2Size": "3.5",
         "display5Font": "Lora",
         "display5Size": 2,
         "display7Font": "Lora",
@@ -57,7 +57,7 @@
     "usedWebp": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 6,
+    "uniqCompNum": 7,
     "versionPublish": "6.0.6"
   },
   "pages": {
@@ -572,13 +572,105 @@
           },
           "_name": "header09",
           "_sourceTheme": "startm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header09 startm5\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\t\n    <mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline name=\"contentWidth\" title=\"Content Width\" min=\"4\" max=\"12\" step=\"1\" value=\"11\">\n\t\t<header>Show / Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n\t\t<select title=\"Vertical Align\" name=\"verticalAlign\" condition=\"fullScreen\">\n\t\t\t<option value=\"flex-start\">Top</option>\n\t\t\t<option value=\"center\" selected>Center</option>\n\t\t\t<option value=\"flex-end\">Bottom</option>\n\t\t</select>\n\t\t<select title=\"Horizontal Align\" name=\"horizontalAlign\">\n\t\t\t<option value=\"flex-start\">Left</option>\n\t\t\t<option value=\"center\" selected>Center</option>\n\t\t\t<option value=\"flex-end\">Right</option>\n\t\t</select>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/legally20lower20your20taxes20image-512x800.png\" selected>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\">\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#f92c50\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"content-wrap col-12 col-md-{{contentWidth}}\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white mb-4\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">\n\t\t\t\t\t<b>NARMA Tax Advisors</b><br><br><b>New Website Coming Soon!</b></h1>\n\t\t\t\t<h2 class=\"mbr-section-title mbr-fonts-style mbr-white mb-4\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\">\n\t\t\t\t\tHeader Subtitle\n\t\t\t\t</h2>\n\t\t\t\t<p class=\"mbr-fonts-style mbr-text mbr-white mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">&nbsp;</p>\n\t\t\t\t<div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\"><a class=\"btn btn-danger-outline\" href=\"mailto:info@narmainc.com\" data-app-placeholder=\"Type Text\">Send Us An Email</a></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header09 startm5\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\t\n    <mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline name=\"contentWidth\" title=\"Content Width\" min=\"4\" max=\"12\" step=\"1\" value=\"11\">\n\t\t<header>Show / Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n\t\t<select title=\"Vertical Align\" name=\"verticalAlign\" condition=\"fullScreen\">\n\t\t\t<option value=\"flex-start\">Top</option>\n\t\t\t<option value=\"center\" selected>Center</option>\n\t\t\t<option value=\"flex-end\">Bottom</option>\n\t\t</select>\n\t\t<select title=\"Horizontal Align\" name=\"horizontalAlign\">\n\t\t\t<option value=\"flex-start\">Left</option>\n\t\t\t<option value=\"center\" selected>Center</option>\n\t\t\t<option value=\"flex-end\">Right</option>\n\t\t</select>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/legally20lower20your20taxes20image-512x800.png\" selected>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\">\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#f92c50\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"content-wrap col-12 col-md-{{contentWidth}}\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white mb-4\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">\n\t\t\t\t\t<b>NARMA Tax Advisors</b><br><br></h1>\n\t\t\t\t<h2 class=\"mbr-section-title mbr-fonts-style mbr-white mb-4\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\">New Website Coming Soon!</h2>\n\t\t\t\t<p class=\"mbr-fonts-style mbr-text mbr-white mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">&nbsp;</p>\n\t\t\t\t<div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\"><a class=\"btn btn-danger-outline\" href=\"mailto:info@narmainc.com\" data-app-placeholder=\"Type Text\">Send Us An Email</a></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
           "_cid": "uNhJZo1bmL",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {},
           "_anchor": "header09-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".media-wrap": {
+              "padding": "0",
+              "@media (max-width: 991px)": {
+                "margin-bottom": "1rem"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".row": {
+                "text-align": "center",
+                "& > div": {
+                  "margin": "auto"
+                }
+              },
+              ".social-row": {
+                "justify-content": "center"
+              }
+            },
+            ".social-row": {
+              "display": "flex",
+              "flex-wrap": "wrap"
+            },
+            ".list": {
+              "list-style": "none",
+              "padding-left": "0",
+              "@media (max-width: 991px)": {
+                "margin-bottom": "2rem"
+              },
+              "@media (min-width: 992px)": {
+                "margin-bottom": "0rem"
+              },
+              "color": "#d8ae5e"
+            },
+            ".mbr-text": {
+              "color": "#bbbbbb"
+            },
+            ".soc-item": {
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center",
+              "border-radius": "50%",
+              "background-color": "white",
+              "margin-right": "0.5rem",
+              "margin-bottom": "1rem",
+              "padding": "0.5rem",
+              "height": "2.5rem",
+              "width": "2.5rem"
+            },
+            ".mbr-iconfont": {
+              "color": "black"
+            },
+            "@media (max-width: 991px)": {
+              "div > *:last-child": {
+                "margin-top": "0 !important"
+              }
+            }
+          },
+          "_name": "footer4",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer4\" group=\"Footers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" global once=\"footers\" mbr-class=\"{\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Logo Size\" name=\"logoSize\" min=\"1\" max=\"3\" step=\"1\" value=\"2\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Social\" name=\"showSocial\">\n        <input type=\"range\" name=\"socialCount\" title=\"Social Count\" min=\"1\" max=\"4\" step=\"1\" value=\"3\" condition=\"showSocial\">\n        <input type=\"checkbox\" title=\"Copyright\" name=\"showCopyright\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background8.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row mbr-white\">\n            <div class=\"col-6 col-lg-3\">\n                <div class=\"media-wrap col-md-{{4*logoSize}} col-12\">\n                    <a href=\"https://mobiri.se/\">\n                        <img src=\"@PROJECT_PATH@/assets/images/narma20ta20logo-397x397.png\" alt=\"Mobirise Website Builder\">\n                    </a>\n                </div>\n            </div>\n            <div class=\"col-12 col-md-6 col-lg-3\">\n                <h5 class=\"mbr-section-subtitle mbr-fonts-style mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\">\n                    <b>About</b>\n                </h5>\n                <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">&nbsp;</p>\n                <h5 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showTitle && showSocial\">\n                    <b>Follow Us</b>\n                </h5>\n                <div class=\"social-row display-7\" mbr-if=\"showSocial\">\n                    <div class=\"soc-item\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon socicon-facebook\"></span>\n                        </a>\n                    </div>\n                    <div class=\"soc-item\" mbr-if=\"socialCount>1\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon socicon-twitter\"></span>\n                        </a>\n                    </div>\n                    <div class=\"soc-item\" mbr-if=\"socialCount>2\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon socicon-instagram\"></span>\n                        </a>\n                    </div>\n                    <div class=\"soc-item\" mbr-if=\"socialCount>3\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon socicon-instagram\"></span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-md-6 col-lg-3\">\n                <h5 mbr-text class=\"mbr-section-subtitle mbr-fonts-style mb-2\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\">\n                    <b>Mobirise Help</b>\n                </h5>\n                <ul class=\"list mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".list\" data-multiline mbr-article>\n                    <li class=\"mbr-text item-wrap\">&nbsp;</li>\n                </ul>\n            </div>\n            <div class=\"col-12 col-md-6 col-lg-3\">\n                <h5 mbr-text class=\"mbr-section-subtitle mbr-fonts-style mb-2\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\">\n                    <b>Mobirise Extensions</b>\n                </h5>\n                <ul class=\"list mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".list\" data-multiline mbr-article>\n                    <li class=\"mbr-text item-wrap\">NARMA Tax Advisors</li><li class=\"mbr-text item-wrap\">PO Box 92935</li>\n                    <li class=\"mbr-text item-wrap\">Philadelphia, PA 19103</li><li class=\"mbr-text item-wrap\">(877) 482-9911</li>\n                    <li class=\"mbr-text item-wrap\"><br></li>\n                </ul>\n            </div>\n            <div class=\"col-12 mt-4\" mbr-if=\"showCopyright\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style copyright align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".copyright\" data-app-placeholder=\"Type Text\">\n                    © Copyright 2025 NARMA Tax Advisors - All Rights Reserved\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "uNi2KmmVIb",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {},
+          "_anchor": "footer4-6"
         }
       ]
     }
