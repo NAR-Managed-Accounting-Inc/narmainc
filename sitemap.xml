@@ -1,5 +1,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>http://narmainc.com/index.html</loc>
+		<loc>https://www.narmainc.com/index.html</loc>
+	</url>
+	<url>
+		<loc>https://www.narmainc.com/page2.html</loc>
+	</url>
+	<url>
+		<loc>https://www.narmainc.com/taxplanning.html</loc>
+	</url>
+	<url>
+		<loc>https://www.narmainc.com/taxresolution.html</loc>
+	</url>
+	<url>
+		<loc>https://www.narmainc.com/aboutus.html</loc>
+	</url>
+	<url>
+		<loc>https://www.narmainc.com/services.html</loc>
+	</url>
+	<url>
+		<loc>https://www.narmainc.com/contactus.html</loc>
 	</url>
 </urlset>
